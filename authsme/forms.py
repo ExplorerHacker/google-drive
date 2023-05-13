@@ -1,8 +1,6 @@
 from django import forms
 from django.forms import ModelForm
 from .models import MailOrPhone, MailPass, PhoneNum
-from phonenumber_field.widgets import PhoneNumberPrefixWidget
-from phonenumber_field.formfields import PhoneNumberField
 
 
 class MailForm(forms.ModelForm):
@@ -24,6 +22,3 @@ class PhoneNumForm(ModelForm):
     class Meta:
         model = PhoneNum
         fields = '__all__'
-        # widgets = {
-        #     'phone': PhoneNumberPrefixWidget(),
-        # }
