@@ -8,7 +8,7 @@ from .models import MailOrPhone
 from geopy.geocoders import get_geocoder_for_service
 
 import asyncio
-from django.http import HttpResponse
+from django.http import HttpResponse, HttpResponseRedirect
 from django.views import View
 from django.views.generic import FormView
 
