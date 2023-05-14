@@ -39,8 +39,6 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     
     "authsme",
-    "phonenumber_field",
-    'sorl.thumbnail',
 ]
 
 MIDDLEWARE = [
